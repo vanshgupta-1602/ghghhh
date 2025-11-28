@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="text" id="sname">
+    <p id="dis"></p>
+    <button onclick="kavya()">Check</button>
+<script>
+function kavya(){
+    let name=document.getElementById('name').value;
+    let sname=document.getElementById('sname').value;
+    let dis=document.getElementById('dis');
+    if(name==sname){
+        dis.textContent='matched';
+    }
+    else{
+        dis.textContent='not matched';
+    }
+}
+</script>
+</body>
+</html>
